@@ -14,10 +14,10 @@
             @include('inc.showcase')    
         @endif
         <div class="row">
-            
             <div class="col-md-8 col-lg-8">
-                    @yield('content')
-            </div>
+                @include('inc.messages')
+                @yield('content')
+            </div>    
 
             <div class="col-md-4 col-lg-4">
                     @include('inc.sidebar')
@@ -26,7 +26,8 @@
         </div>
 
     </div>
-        
+    <br>
+    <br>   
 
    <footer id="footer" class="text-center">
         <p>Copyright 2019 &copy; Acme</p>
